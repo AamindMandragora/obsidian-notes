@@ -1,0 +1,3 @@
+A linear differential equation of order $n$ is a linear relationship between $Y$ and it's first $n$ derivatives, and can be written in the form $$y^{(n)}+a_{n-1}(t)y^{(n-1)}+\cdots+a_1(t)y'+a_0(t)y=f(t)$$The **fundamental existence and uniqueness theorem** states that if the functions $a_k(t)$ are all continuous in an open interval $(a,b)$ containing $t_0$ then the given initial value problem has a unique solution defined for every point in that interval.
+
+A linear differential equation in which the forcing term $f(t)$ is zero is called **homogeneous**, and **nonhomogeneous** otherwise.

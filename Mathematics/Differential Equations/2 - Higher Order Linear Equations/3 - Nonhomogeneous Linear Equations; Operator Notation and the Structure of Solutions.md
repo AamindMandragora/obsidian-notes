@@ -1,0 +1,3 @@
+# Operator Notation
+
+We define $\mathcal{L}$ as a linear differential operator that takes a function as input and returns another function. For example, we can have $$\mathcal{L}=a(t)\frac{d^2}{dt^2}+b(t)\frac{d}{dt}+c(t)$$then applying $\mathcal L$ to $y$ gives $$\mathcal Ly=a(t)y''+b(t)y'+c(t)y$$Since the operator is linear, applying it to a linear combination of functions is equivalent to taking the linear combination of functions it's applied to.

@@ -1,0 +1,1 @@
+In French, to write about actions that have been completed before another event or habitual actions that precede another habit, we use the imperfect past of the auxiliary verb ("avoir" or "être"), and the past participle of the verb.

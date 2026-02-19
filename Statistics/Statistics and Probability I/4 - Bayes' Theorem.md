@@ -1,0 +1,3 @@
+Let $B_1, B_2, \ldots, B_m$ be a **partition** of $S$, meaning that $$S=\bigcup_{k=0}^mB_k,~ B_i\cap B_j=\emptyset, i\neq j$$Now let $A$ be an event, then we can write $$A=A\cap S=\bigcup_{k=0}^m(B_k\cap A)$$In other words, $A$ equals the union of the parts of $A$  in each $B_k$. Since each $B_k$ is disjoint, $$P(A)=\sum_{k=1}^mP(B_k\cap A)$$and we can use the multiplication rule to find $$P(A)=\sum_{k=1}^mP(B_k)P(A\mid B_k)$$called the **Law of Total Probability**.
+
+We know from conditional probability that $$P(B_k\mid A)=\frac{P(B_k\cap A)}{P(A)}$$and we can use the multiplication rule and the Law of Total Probability to get $$P(B_k\mid A)=\frac{P(B_k)P(A\mid B_k)}{\sum_{i=1}^mP(B_i)P(A\mid B_i)}$$This is called **Bayes' Theorem**.

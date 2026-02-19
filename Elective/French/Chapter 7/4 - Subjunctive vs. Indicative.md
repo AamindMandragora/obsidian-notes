@@ -1,0 +1,1 @@
+Some verbs represent certainty (to believe, to think, to be sure that) and will be followed by the indicative in the affirmative. However, if they're in questions or the negative, they indicate doubt, so the subjunctive is used.

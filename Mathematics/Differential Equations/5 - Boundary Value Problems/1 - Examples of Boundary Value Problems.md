@@ -1,0 +1,5 @@
+We've focused on initial value problems where all the information is given for some initial time, but sometimes the information is given at multiple points in a **boundary problem**. In some cases, they have unique solutions, but in other cases there does not exist a unique solution.
+
+To compute the deflection of a beam, use the equation $$EIy^{(4)}(x)=g(x)$$where $E$ is the **elastic modulus** and $I$ is the second moment of the cross-sectional area of the beam. Larger $E$ represents a more bend-resistant beam, and $g(x)$ represents the load on the beam. This equation requires four boundary conditions, two for the ends at $x_1, x_2$. Non-free ends have zero deflection and zero first derivative of deflection for fixed beams or zero second derivative of deflection for supported beams. Free ends have zero second and third derivatives for deflection.
+
+When the beam is subjected to a constant load $w$, we can integrate the equation up four times to get $$y(x)=\frac{wx^4}{24}+\frac{Ax^3}{6}+\frac{Bx^2}{2}+Cx+d$$and plugging in the boundary conditions give four equations for the four unknown coefficients.

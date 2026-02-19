@@ -1,0 +1,6 @@
+# Memory Layout
+
+When a process starts, it gets its own address space, and each one gets: a statically allocated stack, where automatic allocations are stored, complete with a stack pointer to tell where the most recent variable ends, and isn't executable; an expanding heap where allocations using `malloc` are stored and is also not executable; a data segment, containing a writable initialized part with all the global and stack variables ending with the data segment at the program break (which can be extended via `brk` / `sbrk`) and the uninitialized part (BSS) containing all the global and static variables that are implicitly initialized; and a readable text segment, where all the executable instructions are stored.
+# Other Contents
+
+To keep track of all these processes, each one gets a process ID and the PID of their parent process, called the PPID. Every process has a parent, which can be `init.d`. They can also contain the running state, list of file descriptors, permissions, arguments, and environment variables, POSIX only requires processes to have a thread and address space, but that's known by most to be not enough.

@@ -1,0 +1,9 @@
+There are several special types of equations, like the **exact equation** $$N(x,y)\frac{dy}{dx}+M(x,y)=0$$where $N_x=M_y$. The implicit solution to the exact equation will be of the form $\psi(x,y)=c$ where $$\frac{\partial\psi}{\partial y}=N(x,y), \frac{\partial\psi}{\partial x}=M(x,y)$$which is guaranteed to exist given the above condition because of the equality of mixed partials.
+
+Another important type of exactly solvable first order equations are **separable equations** of the form $$\frac{dy}{dt}=f(t)g(y)$$which we discussed prior.
+
+Sometimes, the differential equation will be of the form $$\frac{dy}{dt}=F\left(\frac{y}{t}\right)$$which is called **scale invariant** and can be solved by the substitution $y=tv$, leading to $$\frac{dy}{dt}=t\frac{dv}{dt}+v=F(v)$$which is a separable equation. If a linear pattern like $v=t+y$ consistently shows up in $F$, then you can make a different substitution.
+
+For second order equations, they're called **reducible** when they're missing either the dependent or independent variable. If there's no $y$ term, we can make the substitution $v=y'$ to turn the equation into a first order linear equation easily solvable using previous methods. If there's no $t$, then we can substitute $y'=p(y)$ and treat $y$ as the independent variable.
+
+A **Bernoulli equation** is a first order equation of the form $$\frac{dy}{dt}+P(t)y=Q(t)y^a$$for some nondegenerate real number $a$. We can divide through to get $$y^{-a}\frac{dy}{dt}+y^{1-a}P(t)=Q(t)$$Defining $w=y^{1-a}, \frac{dw}{dt}=(1-a)y^a$ we can rewrite the first order equation as $$\frac{1}{1-a}\frac{dw}{dt}+P(t)w=Q(t)$$which is easily solvable.

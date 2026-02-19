@@ -1,0 +1,1 @@
+Relative pronouns link two related ideas into a single sentence, avoiding repetition. "Qui" is used for the subject of a sentence and is followed by a verb, while "que" is used for direct objects and aren't directly followed by verbs. For agreements in the composite past, the past participle agrees with the direct object.

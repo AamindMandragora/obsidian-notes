@@ -1,0 +1,3 @@
+To express actions happening at the same time as the main verb, take the stem of the nous form of the present tense verb and add "-ant" (the English equivalent is "-ing"). The only exceptions are "avoir" (ayant), "être" (étant), and "savoir" (sachant). The present participle can replace "qui + conjugated verb". The gerund is "en + present participle" and can be translated to "while / upon / by". 
+
+The present participle is tied to the object, while the gerund is tied to the verb.

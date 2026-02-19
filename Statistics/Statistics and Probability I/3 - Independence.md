@@ -1,0 +1,5 @@
+Two events $A$ and $B$ are **independent** if the occurrence of one doesn't affect the probability of the occurrence of the other. In other words, they are independent if $P(A\mid B)=P(A)$ and $P(B\mid A)=P(B)$, which is equivalent to saying $P(A\cap B)=P(A)P(B)$. Otherwise, they're called **dependent**.
+
+**Mutually exclusive** events $A$ and $B$ are those such that $P(A\cap B)=0$. This is *not the same* as independence.
+
+When we generalize independence to multiple events $A_1,A_2,\ldots,A_n$, we can check if each event is independent of every other event (**pairwise independence**), or if they are also independent when combined (**mutual independence**. In other words, pairwise independence means $$\forall i,j\leq n, A_i\neq A_j\to P(A_i\cap A_j)=P(A_i)P(A_j)$$and mutual independence is a stronger condition that also requires $$P\left(\bigcap_{i=0}^{n}A_i\right)=\prod_{i=0}^nP(A_i)$$in addition to the events being pairwise independent.

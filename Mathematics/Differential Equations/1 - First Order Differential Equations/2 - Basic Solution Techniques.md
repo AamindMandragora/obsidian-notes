@@ -1,0 +1,3 @@
+There are essentially two categories of methods to solve ODEs: recognizing the equation as the exact derivative of something and integrating up, or guessing and checking solutions.
+
+The first category is applicable for ODEs where some derivative of $y$ equals some function of $t$, appearing in the form: $$\frac{d^ny}{dt^n}=f(t)$$While many equations aren't always in this form initially, there is a similar way to solve ODEs of the form $$\frac{dy}{dt}=f(t)g(y)$$If we split the derivative into differentials and move like variables to opposite sides we turn the equation into $$\frac{dy}{g(y)}=f(t)dt$$and integrate both sides for an implicit solution, which is often enough unless finding an explicit solution is possible.

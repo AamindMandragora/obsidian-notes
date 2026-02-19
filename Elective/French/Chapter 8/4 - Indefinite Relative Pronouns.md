@@ -1,0 +1,1 @@
+To replace nonspecific ideas that haven't already been mentioned, we can use indefinite relative pronouns (which translate to "what" or "which"). For subjects, direct objects, and objects of verbs with "de", add "ce" to the corresponding relative pronouns "qui", "que", and "dont". For objects of prepositions other than "de", use that preposition + "quoi".

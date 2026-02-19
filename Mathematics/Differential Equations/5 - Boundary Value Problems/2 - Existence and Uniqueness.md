@@ -1,0 +1,11 @@
+Unlike initial value problems which always have unique solutions given that they satisfy a lightweight hypothesis, boundary value problems may have any number of solutions.
+
+For example, consider the two similar equations $$\begin{align}y''+\pi^2y=0,~~ y(0)=0,~~ y(1)=0 \\ y''+\pi^2y=\sin(\pi x),~~ y(0)=0,~~y(1)=0\end{align}$$The first equation has an easily solvable characteristic equation, and the corresponding solution is $$y(x)=A\cos(\pi x)+B\sin(\pi x)$$Imposing the two boundary conditions give two consistent linearly dependent equations, which means there are an infinite number of solutions.
+
+After solving the second nonhomogeneous equation, we find the general solution is given by $$y(x)=A\cos(\pi x)+B\sin(\pi x)-\frac{x\cos(\pi x)}{2\pi}$$and when we try and solve the boundary value problem this time we get an inconsistent set of linear equations, meaning there is no solution.
+
+A theorem determining the number of solutions of a second order linear two-point boundary value problem is as follows:
+
+Consider the boundary value problem $$\begin{align}y''+p(x)y'+q(x)y=\mathbf{L}y=f(x) \\ \alpha_1y(a)+\alpha_2y'(a)=A \\ \beta_1y(b)+\beta_2y'(b)=B\end{align}$$where $p,q,f$ are continuous on $[a,b]$. The corresponding homogeneous equation is given by $$y''+p(x)y'+q(x)y=\mathbf{L}y=0$$Then the corresponding homogeneous equation has either a unique solution or an infinite number of solutions, and the original equation will have a unique solution if the homogeneous equation has a unique solution and either no solutions or an infinite number otherwise.
+
+This theorem is reminiscent of the fact that a system of linear equations has a unique solution if and only if the only element in the matrix's nullspace is the zero vector. An equivalent condition is the matrix being **singular** (non-invertible), where the determinant is zero. In this case, we can analyze the matrix $$\mathbf{M}=\begin{pmatrix}\alpha_1y_1(a)+\alpha_2y_1'(a) & \alpha_1y_2(a)+\alpha_2y_2'(a) \\ \beta_1y_1(b)+\beta_2y_1'(b) & \beta_1y_2(b)+\beta_2y_2'(b)\end{pmatrix}$$

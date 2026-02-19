@@ -1,0 +1,4 @@
+C was developed in 1973 by Dennis Ritchie and Ken Thompson at Bell Labs to target the most popular computers at that time (PDP-7) and to remove the lower-level parts of code (registers, jumps, etc.) to code procedurally while still being able to interact with the OS. Its first real standardization was with Ritchie and Brian Kernighan's book, the de-facto standard for learning C. This course focuses on the POSIX C library that extends the ISO standard (which Linux isn't fully compliant with for several reasons) and will use mostly C99, although with some new C11 features and some POSIX-exclusive functions like `getline` that are supported by GNU.
+# Features
+
+Important features of C are its speed, as there isn't much separating the program and the system; its simplicity and minimal set of functions; its manual memory management; and its ability to call and be called from functions in other languages.

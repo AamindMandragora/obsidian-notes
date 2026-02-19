@@ -1,0 +1,5 @@
+A segregated allocator divides the heap into different areas each with their own free list and sub-allocator depending on the sizes of the blocks.
+
+The buddy allocator is a type of segregated allocator, and the most common form is the binary buddy allocator, which splits allocation into blocks of size $m\cdot 2^k$, where $m$ is some base number of bytes. If there aren't any blocks of the desired size $2^n$, we'll go to the next allocator for $2^{n+1}$ blocks and split it. If two neighboring free blocks happen to be the same size, they can coalesce. This allocator is fast because, since the heap is partitioned into blocks of size $m\cdot 2^k$, each block ends up only having one candidate for coalescing, which we can find using binary arithmetic to make the whole operation $O(1)$.
+
+The only real disadvantage of the buddy allocator is the massive internal fragmentation, since allocations are rounded up to the nearest block size, which is a power of two. The Fibonacci buddy allocator does much better at that, but is a lot slower because we can no longer use binary arithmetic to find coalescing partners.

@@ -1,0 +1,1 @@
+To link words or phrases, we can use "et" (and), "ou" (or), "soit... soit..." (either... or...), or "ne... ni... ni..." (neither... nor...). Since "neither... nor..." is still negative, drop any indefinite and partitive articles.

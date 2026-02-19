@@ -1,0 +1,3 @@
+A process is an instance of a computer program that may or may not be running, Each program is allocated a single process at the beginning, but can make more. Programs consist of: a binary format detailing which parts are executable, which are constants, which are library includes, etc.; a set of machine instructions; a Program Counter; constants; and libraries to link and where to fill in their addresses.
+
+Processes are powerful but isolated, as normally, no process can communicate with another process, which is useful when working in a system where different processes have different permissions. There's no way to unintentionally change another process's state, but there are other intentional ways.

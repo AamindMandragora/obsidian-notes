@@ -1,0 +1,1 @@
+If there's only one subject in a sentence, the second verb is in the infinitive even if there's an expression of doubt, opinion, will, or emotion (except for the two conjunctions above).

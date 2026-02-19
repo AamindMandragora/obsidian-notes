@@ -1,0 +1,5 @@
+For physical problems, it's important to know that there exists a solution and that solution is unique, something that can't just be assumed.
+
+The **Picard theorem** states that, for a differential equation of the form $$\frac{dy}{dt}=f(y,t), y(t_0)=y_0$$if $f(y, t)$ is continuous in a neighborhood around $(y_0, t_0)$ then a solution exists in some rectangle $|t-t_0|<\delta, |y-y_0|<\epsilon$. In addition, if $$\frac{\partial f}{\partial y}(y, t)$$is continuous in a neighborhood around $(y_0,t_0)$, then that solution is unique. These conditions are sufficient but not necessary (if the hypotheses fail, it doesn't mean that no such unique solution exists).
+
+**Picard iteration** constructs a sequence of functions $y_n(t)$ that get closer and closer to the solution, starting with $y_{(0)}(t)=y_0$ and continuously solving the differential equation $$\frac{dy_{(n)}}{dt}=f(y_{(n-1)}(t), t), y_{(n)}(t_0)=y_0$$which can be integrated up to give $$y_{(n)}(t)=y_0+\int_{t_0}^tf(y_{(n-1)}(t),t)dt$$and is guaranteed to converge to a solution of the original equation.

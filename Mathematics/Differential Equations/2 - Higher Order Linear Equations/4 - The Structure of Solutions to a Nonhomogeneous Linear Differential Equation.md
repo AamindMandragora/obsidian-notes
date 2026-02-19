@@ -1,0 +1,1 @@
+Suppose that the nonhomogeneous differential equation $$\mathcal Ly=f(t)$$has a **particular solution** $y_p(t)$, then the general solution is given by $$y(t)=y_p(t)+y_h(t)$$where $y_h(t)$ is the general solution to the associated homogeneous equation.

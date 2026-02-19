@@ -1,0 +1,1 @@
+The relative pronoun "dont" is used to replace "de + noun" (translated as "about which", "about whom", "of whom", or "whose") or to indicate possession (translated as "whose").

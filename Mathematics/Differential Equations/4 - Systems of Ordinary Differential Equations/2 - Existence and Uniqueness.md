@@ -1,0 +1,3 @@
+For the nonlinear system $$\frac{d\mathbf y}{dt}=\mathbf f(\mathbf y, t), \mathbf y(t_0)=\mathbf y_0$$there exists a solution in some interval $(t_0-\epsilon, t_0+\epsilon)$ if $\mathbf f$ is continuous in a neighborhood around the initial condition point. The solution is unique if the $n^2$ partial derivatives $\frac{\partial f_i}{\partial y_j}$ are continuous in that neighborhood.
+
+The most general linear initial value problem can be written $$\frac{dv}{dt}=\mathbf A(t)\mathbf v+\mathbf f(t), \mathbf v(t_0)=\mathbf v_0$$and has a unique solution in an interval $I$ containing $t_0$ where $\mathbf A, \mathbf f$ depend continuously on $t$.
