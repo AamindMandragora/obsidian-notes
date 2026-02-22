@@ -1,0 +1,9 @@
+`pthread_create` takes a pointer to a thread ID, a function that takes a `void*` and returns a `void*`, the argument to that function, and several options. It calls the `clone` system call to create another stack within the process. Since the process starts with a single thread, explicitly creating $n$ threads means the process will have at least $n+1$ stacks, each holding that threads automatic variables and the old program counter.
+
+`pthread_cancel` sends a request to stop a thread but offers no guarantees on when that thread actually stops. The request can be terminated if, for example, the thread makes a system call. This function is rarely used as threads don't clean up open resources like files. Instead, we can use a global boolean whose value informs other threads that it's time to clean up and exit.
+
+`pthread_exit(void*)` stops the calling thread, automatically finishing the process if there are no other running threads. It's equivalent to returning from the thread's function, the single argument denoting the return value. `exit()`, on the other hand, exits the entire process and sets its exit value, like `return` in the main method. Calling `pthread_exit` in the main thread ensures the process keeps running until all threads finish. This creates zombie threads, but for short-term processes it's not a big deal.
+
+`pthread_join` takes a pointer to a thread ID and a pointer to a `void*` where the thread's return value will be written, and waits on that thread. Finished threads still consume resources until waited on, and if there are enough then calls to `pthread_create` will start failing.
+
+To exit threads, we can return from the thread function, call `pthread_exit`, call `pthread_cancel`, termination using a signal, calling `exit` or `abort`, return from main, or execute another program.
