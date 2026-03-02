@@ -1,0 +1,3 @@
+Condition variables allow a set of threads to sleep until either one chosen by the OS or all of them are woken up. Threads can't wake other threads up directly, so they signal the condition variable which does the waking. They're also used with a mutex and a loop, so threads that are woken up must check a condition in a critical section. Outside of critical sections, there are other ways to do it in POSIX, and threads sleeping inside a condition variable are woken up by calling `pthread_cond_broadcast` to wake all of them or `pthread_cond_signal` to wake one.
+
+Some threads spuriously wake up due to the kernel detecting the potential loss of a wake-up call, so we include the mutex and loop to double-check the condition.

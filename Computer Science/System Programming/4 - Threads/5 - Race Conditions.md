@@ -1,7 +1,7 @@
 Race conditions are whenever the outcome of a program is determined by how the OS schedules the operations, which means it's nondeterministic from the scope of the programmer and the output won't be easily reproducible.
 
 For example, if we create two threads that take a pointer to an integer, adds it to itself, then writes that value back to the pointer, then the code could either run sequentially and quadruple the number or run in parallel and double it, or some other combination of loads, adds, and stores. With compiler optimizations, the assembly instruction turns out to be a single line, but the hardware itself may experience a race condition. We can avoid that by using the `lock` prefix, but we want a solution in C.
-# A Day at the Races
+## A Day at the Races
 
 Another small race condition can occur when we're making threads inside a loop and passing in the reference to the index variable (like `i` or `j`) as an argument, since we could be moving to the next iteration and updating the variable before the thread finishes. To overcome this race condition, we can either create a `struct` holding the necessary information for the thread and pass that in, or just cast `i` as a pointer, then recase as an integer inside the thread.
 

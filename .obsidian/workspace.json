@@ -11,14 +11,14 @@
             "id": "c80366056e6f137b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Computer Science/System Programming/4 - Threads/5 - Race Conditions.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "5 - Race Conditions"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "2ebe5056adfefc00",
@@ -161,13 +161,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "24f48253ae892e5f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,20 +193,33 @@
   },
   "active": "c80366056e6f137b",
   "lastOpenFiles": [
+    "Statistics/Statistics and Probability I/9 - Binomial and Geometric Distributions.md",
     "Statistics/Statistics.md",
-    "Computer Science/System Programming/4 - Threads/5 - Race Conditions.md",
-    "Computer Science/System Programming/4 - Threads/4 - Pthread Functions.md",
-    "Computer Science/System Programming/3 - Memory Allocators/3 - Memory Allocators.md",
-    "Computer Science/System Programming/3 - Memory Allocators/2 - C Memory Allocation API.md",
-    "Computer Science/System Programming/3 - Memory Allocators/6 - SLUB Allocator, Slab Allocation.md",
-    "Computer Science/System Programming/4 - Threads/1 - Processes vs Threads.md",
-    "Computer Science/System Programming/4 - Threads/3 - Simple Usage.md",
-    "Computer Science/System Programming/4 - Threads/2 - Thread Internals.md",
-    "Computer Science/System Programming/4 - Threads/4 - Threads.md",
-    "Computer Science/System Programming/System Programming.md",
+    "Mathematics/Mathematics.md",
+    "Mathematics/Differential Equations/Differential Equations.md",
+    "Mathematics/Abstract Linear Algebra/Abstract Linear Algebra.md",
+    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces/1 - N-Dimensional Real and Complex Vectors.md",
+    "Mathematics/Differential Equations/1 - First Order Differential Equations/1 - First Order Differential Equations.md",
+    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces",
+    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces.canvas",
     "Computer Science/Computer Science.md",
-    "Statistics/Statistics and Probability I/7 - Variance and Standard Deviation.md",
-    "Statistics/Statistics and Probability I/5 - Discrete Random Variables.md",
-    "Statistics/Statistics and Probability I/Statistics and Probability I.md"
+    "Computer Science/System Programming/System Programming.md",
+    "Computer Science/System Programming/5 - Synchronization/5 - Synchronization.md",
+    "Computer Science/System Programming/5 - Synchronization/4 - Thread-Safe Data Structures.md",
+    "Computer Science/System Programming/5 - Synchronization/3 - Condition Variables.md",
+    "Computer Science/System Programming/5 - Synchronization/2 - Mutex.md",
+    "Computer Science/System Programming/5 - Synchronization/1 - Introduction.md",
+    "Computer Science/System Programming/4 - Threads/4 - Threads.md",
+    "Computer Science/System Programming/4 - Threads/5 - Race Conditions.md",
+    "Computer Science/System Programming/5 - Synchronization/10 - Process Synchronization.md",
+    "Computer Science/System Programming/5 - Synchronization/9 - Ring Buffer.md",
+    "Computer Science/System Programming/5 - Synchronization/8 - Barriers.md",
+    "Computer Science/System Programming/5 - Synchronization/7 - Implementing Counting Semaphore.md",
+    "Computer Science/System Programming/5 - Synchronization/6 - Working Solutions.md",
+    "Computer Science/System Programming/5 - Synchronization/5 - Software Solutions to the Critical Section.md",
+    "Computer Science/System Programming/3 - Memory Allocators/3 - Memory Allocators.md",
+    "Computer Science/System Programming/4 - Threads/4 - Pthread Functions.md",
+    "Computer Science/System Programming/3 - Memory Allocators/2 - C Memory Allocation API.md",
+    "Computer Science/System Programming/3 - Memory Allocators/6 - SLUB Allocator, Slab Allocation.md"
   ]
 }
