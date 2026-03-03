@@ -11,14 +11,14 @@
             "id": "62473a77064c1ba0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".gitignore",
+                "bFile": ".gitignore",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "4 - Bivariate Discrete Distributions"
+              "icon": "diff",
+              "title": "Diff: .gitignore  (Working Tree)"
             }
           }
         ]
@@ -193,6 +193,8 @@
   },
   "active": "62473a77064c1ba0",
   "lastOpenFiles": [
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
+    "conflict-files-obsidian-git.md",
     "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/1 - Bivariate Distributions.md",
     "Statistics/Statistics and Probability I/9 - Binomial and Geometric Distributions.md",
     "Statistics/Statistics and Probability I/8 - Moment Generating Functions.md",
@@ -203,7 +205,6 @@
     "Statistics/Statistics and Probability I/3 - Independence.md",
     "Statistics/Statistics and Probability I/2 - Conditional Probability.md",
     "Statistics/Statistics and Probability I/1 - Basic Probability.md",
-    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
     "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/Untitled.md",
     "Statistics/Statistics and Probability I/1 - Probability/1 - Probability.md",
     "Statistics/Statistics and Probability I/2 - Discrete Random Variables/2 - Discrete Random Variables.md",
@@ -219,7 +220,6 @@
     "Statistics/Statistics and Probability I/3 - Continuous Random Variables/4 - Normal Distribution.md",
     "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions",
     "Mathematics/Mathematics.md",
-    "Elective/Elective.md",
     "Statistics/Statistics and Probability I/3 - Continuous Random Variables",
     "Statistics/Statistics and Probability I/2 - Discrete Random Variables/Untitled",
     "Statistics/Statistics and Probability I/2 - Discrete Random Variables",
