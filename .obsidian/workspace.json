@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6d1fc197e5c3770e",
+        "id": "39e19f277f230518",
         "type": "tabs",
         "children": [
           {
-            "id": "c80366056e6f137b",
+            "id": "62473a77064c1ba0",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "4 - Bivariate Discrete Distributions"
             }
           }
         ]
@@ -177,7 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,35 +191,40 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c80366056e6f137b",
+  "active": "62473a77064c1ba0",
   "lastOpenFiles": [
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/1 - Bivariate Distributions.md",
     "Statistics/Statistics and Probability I/9 - Binomial and Geometric Distributions.md",
-    "Statistics/Statistics.md",
-    "Mathematics/Mathematics.md",
-    "Mathematics/Differential Equations/Differential Equations.md",
-    "Mathematics/Abstract Linear Algebra/Abstract Linear Algebra.md",
-    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces/1 - N-Dimensional Real and Complex Vectors.md",
-    "Mathematics/Differential Equations/1 - First Order Differential Equations/1 - First Order Differential Equations.md",
-    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces",
-    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces.canvas",
-    "Computer Science/Computer Science.md",
+    "Statistics/Statistics and Probability I/8 - Moment Generating Functions.md",
+    "Statistics/Statistics and Probability I/7 - Variance and Standard Deviation.md",
+    "Statistics/Statistics and Probability I/6 - Expected Value.md",
+    "Statistics/Statistics and Probability I/5 - Discrete Random Variables.md",
+    "Statistics/Statistics and Probability I/4 - Bayes' Theorem.md",
+    "Statistics/Statistics and Probability I/3 - Independence.md",
+    "Statistics/Statistics and Probability I/2 - Conditional Probability.md",
+    "Statistics/Statistics and Probability I/1 - Basic Probability.md",
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/Untitled.md",
+    "Statistics/Statistics and Probability I/1 - Probability/1 - Probability.md",
+    "Statistics/Statistics and Probability I/2 - Discrete Random Variables/2 - Discrete Random Variables.md",
+    "Statistics/Statistics and Probability I/2 - Discrete Random Variables/1 - Discrete Random Variables.md",
+    "Statistics/Statistics and Probability I/2 - Discrete Random Variables/2 - Expected Value.md",
     "Computer Science/System Programming/System Programming.md",
     "Computer Science/System Programming/5 - Synchronization/5 - Synchronization.md",
-    "Computer Science/System Programming/5 - Synchronization/4 - Thread-Safe Data Structures.md",
-    "Computer Science/System Programming/5 - Synchronization/3 - Condition Variables.md",
-    "Computer Science/System Programming/5 - Synchronization/2 - Mutex.md",
-    "Computer Science/System Programming/5 - Synchronization/1 - Introduction.md",
-    "Computer Science/System Programming/4 - Threads/4 - Threads.md",
-    "Computer Science/System Programming/4 - Threads/5 - Race Conditions.md",
-    "Computer Science/System Programming/5 - Synchronization/10 - Process Synchronization.md",
-    "Computer Science/System Programming/5 - Synchronization/9 - Ring Buffer.md",
-    "Computer Science/System Programming/5 - Synchronization/8 - Barriers.md",
-    "Computer Science/System Programming/5 - Synchronization/7 - Implementing Counting Semaphore.md",
-    "Computer Science/System Programming/5 - Synchronization/6 - Working Solutions.md",
-    "Computer Science/System Programming/5 - Synchronization/5 - Software Solutions to the Critical Section.md",
-    "Computer Science/System Programming/3 - Memory Allocators/3 - Memory Allocators.md",
-    "Computer Science/System Programming/4 - Threads/4 - Pthread Functions.md",
-    "Computer Science/System Programming/3 - Memory Allocators/2 - C Memory Allocation API.md",
-    "Computer Science/System Programming/3 - Memory Allocators/6 - SLUB Allocator, Slab Allocation.md"
+    "Computer Science/Data Structures/Data Structures.md",
+    "Computer Science/Computer Architecture/Computer Architecture.md",
+    "Computer Science/Computer Science.md",
+    "Elective/French/French.md",
+    "Statistics/Statistics and Probability I/3 - Continuous Random Variables/3 - Continuous Random Variables.md",
+    "Statistics/Statistics and Probability I/3 - Continuous Random Variables/4 - Normal Distribution.md",
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions",
+    "Mathematics/Mathematics.md",
+    "Elective/Elective.md",
+    "Statistics/Statistics and Probability I/3 - Continuous Random Variables",
+    "Statistics/Statistics and Probability I/2 - Discrete Random Variables/Untitled",
+    "Statistics/Statistics and Probability I/2 - Discrete Random Variables",
+    "Statistics/Statistics and Probability I/1 - Probability",
+    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces",
+    "Mathematics/Abstract Linear Algebra/1 - Vector Spaces.canvas"
   ]
 }

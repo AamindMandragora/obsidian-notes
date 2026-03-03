@@ -1,6 +1,7 @@
-# 1 - Chapter 1 Overview
- 
-```ccard
-type: folder_brief_live
-```
- 
+%% Begin Waypoint %%
+- [[1 - A Peripheral Modernity]]
+- [[2 - The Colonial Prosumers]]
+- [[3 - Trade, Art, and Origins]]
+- [[4 - Cinema and Governance]]
+
+%% End Waypoint %%

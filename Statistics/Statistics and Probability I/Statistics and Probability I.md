@@ -1,12 +1,7 @@
 %% Begin Waypoint %%
-- [[1 - Basic Probability]]
-- [[2 - Conditional Probability]]
-- [[3 - Independence]]
-- [[4 - Bayes' Theorem]]
-- [[5 - Discrete Random Variables]]
-- [[6 - Expected Value]]
-- [[7 - Variance and Standard Deviation]]
-- [[8 - Moment Generating Functions]]
-- [[9 - Binomial and Geometric Distributions]]
+- **[[1 - Probability]]**
+- **[[2 - Discrete Random Variables]]**
+- **[[3 - Continuous Random Variables]]**
+- **[[4 - Bivariate Discrete Distributions]]**
 
 %% End Waypoint %%

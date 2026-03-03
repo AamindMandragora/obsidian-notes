@@ -1,0 +1,5 @@
+Recall that for a Poisson process with rate $\lambda$, a random variable measuring the waiting time until the first occurrence samples from an exponential distribution with parameter $\theta=1/\lambda$. Let a random variable $X$ denote the waiting time until the $\alpha\text{th}$ occurrence. We can then say that $X$ follows a **gamma distribution** with parameters $\theta,\alpha$.
+
+The gamma function is as follows: $$\Gamma(t)=\int_0^\infty y^{t-1}e^{-y}dy\text{, }0<t$$We can use integration by parts with $u=y^{t-1}$, $du=(t-1)y^{t-2}dy$, $v=-e^{-y}$, $dv=e^{-y}dy$ to obtain: $$\begin{align}\Gamma(t)&=\left[-y^{t-1}e^{-y}\right]_0^\infty+\int_0^\infty (t-1)y^{t-2}e^{-y}dy \\ &= (t-1)\int_0^\infty y^{t-2}e^{-y}dy \\ &= (t-1)\Gamma(t-1)\end{align}$$This means that for integer $t$, $\Gamma(t)=(t-1)!$.
+
+The probability density function for the gamma distribution is: $$f(x)=\frac{x^{\alpha - 1}e^{-x/\lambda}}{\Gamma(\alpha)\theta^\alpha}\text{ for } 0\leq x<\infty$$or, for integer $x$, $$f(x)=\frac{x^{\alpha - 1}e^{-x/\lambda}}{(\alpha - 1)!\cdot\theta^\alpha}\text{ for } 0\leq x<\infty$$This makes $E[X]=\alpha\theta$ and $Var[X]=\alpha\theta^2$.
