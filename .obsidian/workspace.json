@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "39e19f277f230518",
+        "id": "ee0092cf4ca53c65",
         "type": "tabs",
         "children": [
           {
-            "id": "62473a77064c1ba0",
+            "id": "aac8d815d956e415",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".gitignore",
-                "bFile": ".gitignore",
+                "aFile": ".obsidian/plugins/obsidian-git/data.json",
+                "bFile": ".obsidian/plugins/obsidian-git/data.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: .gitignore  (Working Tree)"
+              "title": "Diff: data.json  (Working Tree)"
             }
           }
         ]
@@ -191,10 +191,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62473a77064c1ba0",
+  "active": "24f48253ae892e5f",
   "lastOpenFiles": [
-    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
     "conflict-files-obsidian-git.md",
+    "Mathematics/Mathematics.md",
+    "Statistics/Statistics and Probability I/Statistics and Probability I.md",
+    "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/4 - Bivariate Discrete Distributions.md",
     "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions/1 - Bivariate Distributions.md",
     "Statistics/Statistics and Probability I/9 - Binomial and Geometric Distributions.md",
     "Statistics/Statistics and Probability I/8 - Moment Generating Functions.md",
@@ -217,9 +219,7 @@
     "Computer Science/Computer Science.md",
     "Elective/French/French.md",
     "Statistics/Statistics and Probability I/3 - Continuous Random Variables/3 - Continuous Random Variables.md",
-    "Statistics/Statistics and Probability I/3 - Continuous Random Variables/4 - Normal Distribution.md",
     "Statistics/Statistics and Probability I/4 - Bivariate Discrete Distributions",
-    "Mathematics/Mathematics.md",
     "Statistics/Statistics and Probability I/3 - Continuous Random Variables",
     "Statistics/Statistics and Probability I/2 - Discrete Random Variables/Untitled",
     "Statistics/Statistics and Probability I/2 - Discrete Random Variables",
