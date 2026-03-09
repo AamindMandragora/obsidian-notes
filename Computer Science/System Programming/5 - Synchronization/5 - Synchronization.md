@@ -1,5 +1,5 @@
 %% Begin Waypoint %%
-- [[1 - Introduction]]
+- [[Computer Science/System Programming/5 - Synchronization/1 - Introduction]]
 - [[2 - Mutex]]
 - [[3 - Condition Variables]]
 - [[4 - Thread-Safe Data Structures]]

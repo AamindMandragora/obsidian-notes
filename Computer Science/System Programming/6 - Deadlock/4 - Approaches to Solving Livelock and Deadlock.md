@@ -1,0 +1,5 @@
+The ostrich algorithm is the approach that ignores deadlock, waiting until it goes away, which usually happens due to the OS preventing cycles when context-switching, performing system call interrupts, and making some files read-only and shareable.
+
+When that isn't enough, we can detect deadlock by keeping track of all the resources and processes through an API or directly, then finding the directed cycle and breaking a process' hold, which is a failure of the fourth Coffman Condition and breaks deadlock as well. This is a popular approach as it doesn't depend on prior knowledge of the program. As Rice's theorem states, we can't know any semantic feature about the program without running it. However, if we end up blocking the same set of resources repeatedly, we can end up in a livelock. The OS therefore non-deterministically picks a resource to break `hold-and-wait`.
+
+Another algorithm is called the **Banker's Algorithm**, which requires each process to define its resource need in advance and forces any potential process that could push the total requested resources count past the amount owned by the bank to wait, preventing livelock.

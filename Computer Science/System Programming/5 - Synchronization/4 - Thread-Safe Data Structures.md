@@ -57,7 +57,7 @@ typedef struct {
 	int count;
 	pthread_mutex_t mtx;
 	double *values;
-} struct stack;
+} stack;
 ```
 
 and define the member functions accordingly, calling `malloc` and `free` in the constructor and destructor.
@@ -69,16 +69,70 @@ void push(stack_t *s, double v) {
 	pthread_mutex_lock(&s->mtx);
 	while (s->count == s->capacity) { pthread_cond_wait(&s->cfull, &s->mtx); }
 	s->values[(s->count)++] = v;
-	pthread_cond_signal(&s->cfull);
 	pthread_mutex_unlock(&s->mtx);
+	pthread_cond_signal(&s->cempty);
 }
 
 double pop(stack_t *s) {
 	pthread_mutex_lock(&s->mtx);
 	while (s->count == 0) { pthread_cond_wait(&s->cempty, &s->mtx); }
 	double v = s->values[--(s->count)];
-	pthread_cond_signal(&s->cempty);
 	pthread_mutex_unlock(&s->mtx);
+	pthread_cond_signal(&s->cfull);
 	return v;
+}
+```
+# Using Semaphores
+
+Instead of using two condition variables, we can use two counting semaphores to keep track of how many items are in the stack and how many spaces remain. We have to make sure to first wait on the corresponding semaphore, then update the underlying array, then post to the other semaphore.
+
+However, if we do that, when the stack is half-full two functions can alter the array at the same time, which breaks mutual exclusion, so we must wrap it in a mutex. Our new implementation will look like this:
+
+```c
+typedef struct {
+	int count;
+	pthread_mutex_t mtx;
+	sem_t sitems;
+	sem_t sremain;
+	double *values;
+} stack;
+
+#define STACK_SIZE 10
+
+stack *stack_init() {
+	stack *s = malloc(sizeof(stack));
+	s->count = 0;
+	s->mtx = PTHREAD_MUTEX_INITIALIZER;
+	sem_init(&s->sitems, 0, 0);
+	sem_init(&s->sremain, 0, STACK_SIZE);
+	s->values = malloc(STACK_SIZE * sizeof(double));
+	return s;
+}
+
+double stack_pop(stack* s) {
+	sem_wait(&s->sitems);
+	pthread_mutex_lock(&s->mtx);
+	double v = values[--s->count];
+	pthread_mutex_unlock(&s->mtx);
+	sem_post(&s->sremain);
+	return v;
+}
+
+void stack_push(stack* s, double v) {
+	sem_wait(&s->sremain);
+	pthread_mutex_lock(&s->mtx);
+	values[s->count++] = v;
+	pthread_mutex_unlock(&s->mtx);
+	sem_post(&s->sitems);
+	return v;
+}
+
+void stack_destroy(stack* s) {
+	pthread_mutex_destroy(&s->mtx);
+	sem_destroy(&s->sitems);
+	sem_destroy(&s->sremain);
+	free(s->values);
+	free(s);
+	return;
 }
 ```
