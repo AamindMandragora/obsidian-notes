@@ -1,0 +1,3 @@
+This approximation works especially well with the Binomial distribution, and as $p\to 0.5$, symmetry makes the approximation better. Usually, $np$ and $n(1-p)$ both need to be greater than five.
+
+Discrete random variables are countable, and their sample space is composed often of integers, which means we must adjust the space to a continuous one using **continuity correction**, which boils down to adding or subtracting $0.5$ from the bounds.
