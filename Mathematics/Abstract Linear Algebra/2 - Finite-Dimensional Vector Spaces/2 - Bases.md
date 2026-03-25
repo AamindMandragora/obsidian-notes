@@ -1,0 +1,5 @@
+A **basis** of $V$ is a list of vectors in $V$ that is linearly independent and spanning. These conditions force every $v\in V$ to have a unique linear combination of $V$'s basis vectors.
+
+Not every spanning list is a basis as they aren't necessarily linearly independent. However, this means we can use the linear dependence lemma to remove a vector and preserve the span. If we keep doing this until the list is linearly independent, we'll have a basis. This means that every finite-dimensional vector space has a basis from either reducing a spanning list or increasing a linearly independent list.
+
+Say we have a subspace $U$ of finite-dimensional $V$, then if we have a basis $u_1,\ldots,u_n$, we can extend it to a basis of $V$ by adding some vectors $w_1,\ldots,w_k$ such that $k+n=m$, the dimension of $V$. Then $w_1,\ldots,w_k$ form a basis for some vector space $W$ such that $U\oplus W=V$.

@@ -1,5 +1,7 @@
 %% Begin Waypoint %%
-- **1 - Vector Spaces**
-	- [[1 - N-Dimensional Real and Complex Vectors]]
+- **[[1 - Vector Spaces]]**
+- **[[2 - Finite-Dimensional Vector Spaces]]**
+- **[[3 - Linear Maps]]**
+- **[[4 - Eigenvalues and Eigenvectors]]**
 
 %% End Waypoint %%
