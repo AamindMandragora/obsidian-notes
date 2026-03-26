@@ -1,0 +1,3 @@
+If we assume $X_1,\ldots,X_n$ are independent and identically distributed, then the joint probability function is equal to the product of their probability functions: $f(x_1,\ldots,x_n)=f(x_1)\cdot\cdots\cdot f(x_n)$. Now, given some known observations $x_1,\ldots,x_n$, we can write the joint probability function as a function of the unknown parameter $\theta$ instead of $x_i$ as follows: $L(\theta)=\prod_{i=1}^nf(x_i;\theta)$. We then find the maximum of $L$, the likelihood function, and use that as our parameter estimate.
+
+Usually, we can find $L(\theta)$, take the natural log to turn the products into sums, take the first derivative and set equal to zero to find the maximum, and solve.

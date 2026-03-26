@@ -1,0 +1,11 @@
+We know that **probability** takes known facts about the population to try and figure out what the sample data will look like. We'll define **statistics** as the field that takes known information from the sample data to try and figure out what the population looks like. While probability **samples** from the population, statistics **infers** from the data.
+
+We'll be using $\mu$, $\sigma^2$, and $\sigma$ for the population mean, variance, and standard deviation. These correspond to $E[X]$, $Var[X]$, and $SD[X]$ for some random variable $X$, our population.
+
+In statistics, we'll define $\bar x=\frac{1}{n}\sum_{i=1}^nx_i$ to be the sample mean, $s^2=\frac{1}{n-1}\sum_{i=1}^n(x_1-\bar x)^2$ to be the sample variance, and $s=\sqrt s$ to be the sample standard deviation.
+
+If we're given a population distribution to take samples from, but we don't know the value of the parameter, we'll call it $\theta$. Then, define the **parameter space** $\Omega$ as the range of all possible values of $\theta$. For example, we could be sampling from a binomial distribution with total trials $n$, but we don't know the probability of success $p$. Our goal will be to estimate $\theta\in\Omega$.
+
+We can observe $n$ samples $X_1,\ldots,X_n$ and estimate $\theta$ with $n$ observations $x_1,\ldots,x_n$. The statistic $u(X_1,\ldots,X_n)$ is an **estimator** of $\theta$, and plugging in the values from the observations gives us an estimate. For example, we can use the sample mean $\bar x$ as a statistic and calculate it for the observations, then use that as our point estimate of the population mean $\mu$.
+
+Recall that $E[X^k]$ is the $k\text{-th}$ raw moment of $X$ and $E[(X-\mu)^K]$ is the $k\text{-th}$ central moment of $X$. We define $\frac{1}{n}\sum_{i=1}^nX_1^k$ as the $k\text{-th}$ sample moment of $X$. We can calculate a sample moment, then set it equal to the theoretical moment and then solve for the unknown parameters. To solve for one parameter, we can find $E[X]$, which will be a function $g(\theta)$. Then, we can set $g(\theta)=\bar X$ and find some estimator $\bar\theta$ that satisfies the equality.
