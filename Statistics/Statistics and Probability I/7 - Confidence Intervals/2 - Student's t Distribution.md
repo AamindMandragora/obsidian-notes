@@ -1,0 +1,3 @@
+The t distribution is very important in statistics. It models many natural phenomena, and is a symmetric distribution with a central peak and tails that taper off. It's pretty similar to the normal distribution, except it uses the sample standard deviation instead of the population standard deviation. If $T=\frac{X-\mu}{s/\sqrt{n}}$, then we say $T\sim t_{n-1}$.
+
+If we have a random variable $Z\sim N(0,1)$ and $U\sim\chi^2(r)$, where $Z$ and $U$ are independent, then $T=\frac{Z}{\sqrt{U/r}}$ has a $t$ distribution.

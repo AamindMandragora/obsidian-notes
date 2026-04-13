@@ -1,0 +1,9 @@
+The matrix of an operator $T$ with respect to a basis $v_1,\ldots,v_n$ of $V$ is the $n$-by-$n$ square matrix $$\mathcal M(T)=\begin{pmatrix}A_{1,1} & \cdots & A_{1,n} \\ \vdots & & \vdots \\ A_{n,1} & \cdots & A_{n,n}\end{pmatrix}$$whose entries are defined by $Tv_k=A_{1,k}v_1+\cdots+A_{n,k}v_n$.
+
+We'd love it if, given an operator $T$ on finite-dimensional $V$, there exists a basis of $V$ with respect to which $T$ has a simple matrix (has many zeroes). Define the **diagonal** of a matrix to be the entries $A_{i,i}$ for $1\leq i\leq n$. 
+
+Since we can extend any vector to a basis of $V$, let that one vector be $(\lambda_1, \ldots)^T$, where $\lambda_1$ is the first eigenvector of $T$, which is guaranteed to exist. Then, a square matrix is called **upper triangular** if all entries below the diagonal are 0. Equivalently, a square matrix is called upper triangular if it's in the form: $$\begin{pmatrix}\lambda_1 & * & * \\ 0 & \ddots & * \\ 0 & 0 & \lambda_n \end{pmatrix}$$The following conditions are equivalent: $\mathcal M(T, (v_1,\ldots,v_n))$ is upper triangular; the span of $v_1,\ldots,v_k$ is invariant under $T$ for each $k=1,\ldots,n$; $Tv_k$ is in the span of $v_1,\ldots,v_k$ for each $k=1,\ldots,n$.
+
+If there's a basis of $V$ that makes the matrix of $T$ upper-triangular, then $(T-\lambda_1I)\cdots(T-\lambda_nI)=0$. This is because $(T=\lambda_kI)v_k$ is in the span of $v_1,\ldots,v_{k-1}$, so $(T-\lambda_1I)\cdots(T-\lambda_kI)v_k=0$ for all $k$.
+
+If $T$ has an upper-triangular matrix, then the eigenvalues of $T$ are precisely the entries on that matrix's diagonal. $T$ can only have an upper-triangular matrix if and only if its minimal polynomial can be factored into polynomials of degree one. This means that all operators on finite-dimensional complex vector spaces have upper-triangular matrices.

@@ -5,5 +5,7 @@
 - **[[4 - Bivariate Discrete Distributions]]**
 - **[[5 - Normal Distribution Functions]]**
 - **[[6 - Point Estimation]]**
+- **[[7 - Confidence Intervals]]**
+- **[[8 - Hypothesis Testing]]**
 
 %% End Waypoint %%

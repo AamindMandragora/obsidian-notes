@@ -1,0 +1,13 @@
+Pipes take in a stream of bytes and spits out a stream of bytes. They were initially invented to take the output of a program and feed them into another program by placing pipes between each program's `stdout` and the next program's `stdin`. We use the `pipe(des)` system call to create a pipe with the read end in `des[0]` and the write one in `des[0]`. We can then use the file descriptors like normal, and oftentimes use pipes before forking to communicate with a child process. Since writing to a pipe can block, there's a limited buffering capacity, which typically ranges from 4KiB to 128KiB.
+# Pipe Gotchas
+
+If we write from a parent process to a child process using a pipe, the child will read bytes one at a time, then wait for more, blocking once we run out of bytes to read. This can force a program to never end unless all the writers close their ends of the pipe, making a read return zero, or the reader checks a special condition. If instead all the read ends of a pipe are closed, a `write` will send a `SIGPIPE` signal to the calling process. It's common practice to close the unused end of each pipe in the child and parent process. We can also set the file descriptor to return when there are no open read ends instead of `SIGPIPE`, which terminates the program.
+# Other Pipe Facts
+
+When the writer writes to the pipe without the reader reading anything, the pipes before full, making all writes fail until a read occurs. Even if a pipe is almost full, a large write can still fail. We can either increase the size of our pipe or write our programs such that pipes are constantly being read from. Pipe writes are atomic until it's almost full, which means the kernel has internal mutexes making the pipe lock in between writes. Unnamed pipes live in memory and are a simple form of IPC useful for streaming data and simple messages. Usually, pipes are meant to be used such that any process uses at most one end of it, otherwise a process could read its own written data.
+# Pipes and Dup
+
+We often like using `dup` with `pipe2` to make the `stdin` and `stdout` of the process the pipe's read and write ends. We must always make sure to close all unused ends of pipes, especially for more complicated programs.
+# Pipe Conveniences
+
+We can wrap file descriptors, including those made from pipes, into `FILE` pointers using `fdopen`. If we need bytes to be sent through the pipe immediately, we must `fflush`. We really shouldn't use the file descriptor API for non-seekable files, since they come with annoyances like buffering and caching. We should save `fdopen` for any device a program can `fseek` (files, shared memory, terminals, etc., not pipes, sockets, epoll objects, etc.).

@@ -9,5 +9,5 @@ Bivariate Continuous: $\int_x\int_yxf(x,y)dydx$
 
 To calculate $E[XY]$, we can use the following methods:
 
-Bivariate Discrete: $\sum_x\sum_xxyf(x,y)$
+Bivariate Discrete: $\sum_x\sum_yxyf(x,y)$
 Bivariate Continuous: $\int_x\int_yxyf(x,y)dydx$

@@ -1,0 +1,1 @@
+We want to make a confidence interval for $\sigma^2$ based on $s^2$, but the latter isn't normal as $\frac{(n-1)s^2}{\sigma^2}\sim\chi_{(n-1)}^2$. This means that our confidence interval will be $$\left(\frac{(n-1)s^2}{\chi^2_{\alpha/2}}, \frac{(n-1)s^2}{\chi^2_{1-\alpha/2}}\right)$$

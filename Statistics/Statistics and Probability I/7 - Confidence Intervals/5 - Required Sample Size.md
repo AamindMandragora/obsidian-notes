@@ -1,0 +1,1 @@
+If we let the width of our interval be $\epsilon=z_{\alpha/2}\cdot\sigma/\sqrt{n}$, then we can rearrange terms to get the sample size $n=(\frac{z_{\alpha/2}\cdot\sigma}{\epsilon})^2$, a function of the width of the interval.

@@ -1,0 +1,6 @@
+In early computers and simple embedded systems, processes directly accessed memory. This means every address corresponded to a specific byte stored somewhere in physical memory. It was hard to adopt virtual memory because it would require the whole fetch cycle to be altered through hardware, and some computers like the PDP-10 simply gave every process different registers and then added virtual memory. Today, each process is isolated, and there's a translation step between an address inside a process and the actual byte of physical memory (RAM). Processes are safe because virtual memory ensures no process can directly read or modify the memory of another process. It also enables efficient allocation and deallocation of memory to different processes. To translate memory, we do the following:
+
+1. A process requests memory
+2. The circuit checks if the Translation Lookaside Buffer has cached the address page
+3. If not, the Memory Management Unit performs the address translation, and a page gets pulled up from RAM and cached in the TLB on a success
+4. The CPU performs the requested operation (read/write) on the physical address

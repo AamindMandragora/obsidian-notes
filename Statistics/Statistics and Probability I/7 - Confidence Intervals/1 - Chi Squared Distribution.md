@@ -1,0 +1,7 @@
+If we draw $n$ iid observations from a population with mean $\mu$ and variance $\sigma^2$, we'd ideally estimate the latter with $\frac 1 n\sum(x_i-\mu)^2$. Unfortunately, we don't always know $\mu$, and replacement with $\bar x$ usually underestimates the variance, so we divide by $n-1$.
+
+The degrees of freedom is the number of values in the final calculation of a statistic or parameter that are free to vary. In other words, the number of observations that contain new information. The population mean is one such value, but the sample mean is derived from other values and therefore is not, which is why we subtract one from the denominator.
+
+The **chi-squared** distribution comes from summing the squares of standard normal random variables. For example, $Z\sim N(0,1)\to Z^2\sim\chi_{(1)}^2$, where the $(1)$ is the number of degrees of freedom. We can add more normal distributions to increase the degrees of freedom.
+
+The pdf for a chi-squared distribution is as follows: $$f(x)=\frac{1}{\Gamma(k/2)2^{k/2}}x^{k/2-1}e^{-x/2}, \,\,0<x<\infty$$Recall the pdf for a gamma distribution is $f(x)=\frac{1}{\Gamma(\alpha)\theta^\alpha}x^{\alpha-1}e^{-x/\theta}$, so a chi-squared distribution is really a wrapper around $Gamma(\alpha=k/2,\theta=2)$. This means that $E[X]=k$ and $Var[X]=2k$.

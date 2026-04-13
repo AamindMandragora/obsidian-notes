@@ -1,5 +1,5 @@
 %% Begin Waypoint %%
-- [[1 - Introduction]]
+- [[Computer Science/System Programming/6 - Deadlock/1 - Introduction]]
 - [[2 - Resource Allocation Graphs]]
 - [[3 - Coffman Conditions]]
 - [[4 - Approaches to Solving Livelock and Deadlock]]

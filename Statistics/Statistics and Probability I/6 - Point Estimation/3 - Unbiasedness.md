@@ -1,0 +1,5 @@
+We want our statistics to be both accurate (result is close to answer) and precise (reliable way to get to the answer). In statistics, accuracy is measured by **bias** and precision is measured by **variance**. Usually, there will be a tradeoff between the two based on what we need more.
+
+If the statistic is always aiming for the parameter you want to estimate, then it's **unbiased**. For example, if $E[u(X_1,\ldots,X_n)]=\theta$, then $u$ is an **unbiased estimator** of $\theta$, and biased otherwise. The **bias** of an estimator is $E[\hat\theta]-\theta$. Usually, biased estimators are either of the form $\theta+c$ or $\theta\cdot c$, which means we can adjust the estimator to make a new, unbiased estimator.
+
+Since estimators are random variables, we can calculate their variance. We usually want to minimize bias, then variance, so we'll choose the estimator with the smallest mean squared error: $MSE(\hat\theta)=[Bias(\hat\theta)]^2+Var(\hat\theta)$.

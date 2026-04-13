@@ -1,0 +1,5 @@
+An operator $T\in\mathcal L(V)$ is called **positive** if $T$ is self-adjoint and $\langle Tv,v\rangle\geq 0$. For complex $V$, the second condition implies the first. Now we can define some $R$ such that $R^2=T$, and we'll call $R$ the **square root** of $T$.
+
+$T$ is a positive operator iff $T$ is self-adjoint with nonnegative eigenvalues iff the matrix of $T$ is diagonal with nonnegative entries with respect to an orthonormal basis of $V$ iff $T$ has a positive square root iff $T$ has a self-adjoint square root iff $T=R^*R$ for some $R\in\mathcal L(V)$. 
+
+Every positive operator $T$ on $V$ has a unique positive square root $R$ where $Rv=\sqrt{\lambda_k}v$ for eigenvalues $\lambda_k$ of $T$. We will denote $R$ as $\sqrt T$. Positive operators where $\langle Tv,v\rangle=0$ are exactly those where $Tv=0$.

@@ -1,0 +1,9 @@
+Recall that diagonalizability of an operator happens iff there is a basis of $V$ consisting of eigenvectors of the operator. The nicest operators have an orthonormal basis with respect to which the operator is diagonalizable, and are exactly the operators such that there's an orthonormal basis of $V$ consisting of eigenvectors of $T$. The spectral theorem states that these nice operators are exactly the self-adjoint operators when $\mathbb F=\mathbb R$ and the normal operators when $\mathbb F=\mathbb C$.
+# Real Spectral Theorem
+
+Let $T\in\mathcal L(V)$ be self-adjoint and $b,c\in\mathbb R$ such that $b^2<4c$, then $T^2+bT+cI$ is an invertible operator since it is injective. It's minimal polynomial equals $(z-\lambda_1)\cdots(z-\lambda_m)$ for some $\lambda_k\in\mathbb R$.
+
+$T$ is self-adjoint iff $T$ has a diagonal matrix with respect to some orthonormal basis of $V$ iff $V$ has an orthonormal basis consisting of eigenvectors of $T$. We can prove this by seeing that the matrix of $T^*$ is the transpose of the matrix of $T$, but since $T$ is upper-triangular and self-adjoint, the matrix must be diagonal.
+# Complex Spectral Theorem
+
+$T$ is normal iff $T$ has a diagonal matrix with respect to some orthonormal basis of $V$ iff $V$ has an orthonormal basis consisting of eigenvectors of $T$. We can prove this by using Schur's theorem to find an orthonormal basis such that an upper-triangular matrix $A$ for $T$ exists. Then, $\|Te_1\|^2=|a_{1,1}|^2$, and $\|T^*e_1\|=\sum|a_{1,k}|^2$, which implies that the only nonzero entry is possible $a_{1,1}$ Doing a similar process for each row shows that the matrix is diagonal. Since diagonal matrices commute, they are normal.

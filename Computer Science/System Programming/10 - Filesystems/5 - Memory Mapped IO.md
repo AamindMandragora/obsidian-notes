@@ -1,0 +1,1 @@
+Reading and writing as we know it happens by using the corresponding system calls. However, we can also map a file into memory for IPC using `mmap`, allowing the user to treat it as a buffer. Not all filesystems support `mmap` for i/o, and those that do have varying behavior. 
