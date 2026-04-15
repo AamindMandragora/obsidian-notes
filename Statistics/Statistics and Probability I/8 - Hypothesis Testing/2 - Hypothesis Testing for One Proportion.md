@@ -1,0 +1,1 @@
+The steps for performing a hypothesis test for one proportion are the exact same as those to test for one mean. However, for these tests, $$Z=\frac{Y/n-p_0}{\sqrt{p_0(1-p_0)/n}}$$
