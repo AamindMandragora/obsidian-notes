@@ -8,4 +8,4 @@ The likeliness of a null hypothesis can be measured with a **p-value**, the prob
 
 In summary, we can either compare our p-value to $\alpha$, our confidence interval to $H_0$, or our test statistic to the critical region to see if we should reject the null hypothesis.
 
-For one mean tests, $H_0:\mu=\mu_0$, $H_1:\mu > / < / \neq \mu _0$, and the critical regions are $z\geq / \leq \pm z_\alpha$ or $|z|\geq z_{\alpha/2}$, where $Z=\frac{\overline Z-\mu_0}{\sigma/\sqrt n}$. We can replace $z$ with $t$ when we don't know the variance, where $T=\frac{\overline Z-\mu_0}{S/\sqrt n}$.
+For one mean tests, $H_0:\mu=\mu_0$, $H_1:\mu > / < / \neq \mu _0$, and the critical regions are $z\geq / \leq \pm z_\alpha$ or $|z|\geq z_{\alpha/2}$, where $Z=\frac{\overline X-\mu_0}{\sigma/\sqrt n}$. We can replace $z$ with $t$ when we don't know the variance, where $T=\frac{\overline Z-\mu_0}{S/\sqrt n}$.

@@ -1,1 +1,3 @@
-Reading and writing as we know it happens by using the corresponding system calls. However, we can also map a file into memory for IPC using `mmap`, allowing the user to treat it as a buffer. Not all filesystems support `mmap` for i/o, and those that do have varying behavior. 
+Reading and writing as we know it happens by using the corresponding system calls. However, we can also map a file into memory for IPC using `mmap`, allowing the user to treat it as a buffer. Not all filesystems support `mmap` for i/o, and those that do have varying behavior. It could be nothing more than a wrapper around `read` and `rite`.
+
+`mmap` is used to load libraries and processes into memory. Since libraries are read-only, multiple processes can share the library's physical memory. `mmap` takes in a file descriptor (meaning we have to `open` the file first), and we can call `munmap` when we're done.

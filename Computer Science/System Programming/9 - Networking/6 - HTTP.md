@@ -1,0 +1,6 @@
+Layer 7 of the OSI model deals with interfacing between applications. We can choose to ignore everything below it and treat the Internet as a way of securely communicating with other computers. Common layer 7 protocols are HyperText Transfer Protocol (Secure), (Trivial) File Transfer Protocol, Domain Name Service, Simple Mail Transfer Protocol, Secure SHell, Bitcoin, BitTorrent, and Network Time Protocol.
+# What's My Name?
+
+When we want to convert a website to an IP address, we use DNS.  If the machine doesn't have the IP address cached, it sends a UDP packet to a local DNS server, which queries other upstream DNS servers until it finds the mapping. It's fast but insecure by itself since it's unencrypted, which means anyone could catch your DNS requests and send back fake mappings. However, after getting the IP address, the connection is usually made over HTTPS, which uses the TLS to verify that the hostname is recognized by a Certificate Authority (which also often get hacked). This is why many upgrade their DNS to DNSSec, which is extra secure.
+
+The dot hierarchy of DNS servers starts with the top-level domains like edu, gov, etc. Then, the next level is resolved (the illinois in illinois.edu). Local resolvers then take care of subdomains like cs.illinois.edu, but there's a limit on how many you can have.

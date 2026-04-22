@@ -1,5 +1,5 @@
 %% Begin Waypoint %%
-- [[1 - Introduction]]
+- [[Computer Science/System Programming/10 - Filesystems/1 - Introduction]]
 - [[1 - What is a Filesystem]]
 - [[2 - Storing Data on Disk]]
 - [[3 - Permissions and Bits]]
