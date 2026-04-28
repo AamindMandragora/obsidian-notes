@@ -1,0 +1,7 @@
+A **contingency table** summarizes the relationship between categorical variables by displaying frequency distribution.
+
+The $\chi^2$ test for homogeneity tests whether subgroups of a population share the same distribution for a single categorical variable. We grab independent random samples from $r$ populations and classify them into $c$ response categories. Our $H_0$ is that in each category, the probabilities are equal for all $r$ populations.
+
+The $\chi^2$ test for independence tests whether two categorical variables are associated with one another in the population. A random sample of size $n$ is classified with respect to a characteristic with $r$ categories and another characteristic with $c$ categories. Our $H_0$ is that the two classifications are independent. In other words, the cell probability is the product of the row and column marginal probabilities.
+
+The test statistic for both is: $$\chi^2=\sum_{j=1}^c\sum_{i=1}^r\frac{(Y_{ij}-n_ip_{ij})^2}{n_ip_{ij}}\sim\chi^2_{(r-1)(c-1)}$$In this case, our observed frequency is $Y_{ij}$ and our expected frequency is $n_ip_{ij}$, which we calculate by multiplying the column total by the row total and dividing by the grand total of the contingency table.

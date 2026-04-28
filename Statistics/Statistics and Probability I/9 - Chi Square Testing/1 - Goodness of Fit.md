@@ -1,0 +1,3 @@
+A random sample of size $n$ is classified into $k$ categories, with $Y_k$ denoting the frequency of category $k$. Let the category probabilities be $p_k$, then $H_0$ is that every $p_k$ equals the observed category probability $p_{k0}$, and $H_A$ is simply $H_0$ not being true. This means that only one $p_k$ has to be off to reject the null hypothesis.
+
+Our test statistic is $\chi^2=\sum_{i=1}^k \frac{(Y_i-np_{i0})^2}{np_{i0}}\sim\chi^2_{(k-1)}$, and we reject $H_0$ if $\chi^2\geq\chi^2_{(k-1),\alpha}$. We also call $Y_i$ our observed frequency and $np_{i0}$ our expected frequency.

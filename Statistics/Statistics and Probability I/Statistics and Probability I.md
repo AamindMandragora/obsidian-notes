@@ -7,5 +7,6 @@
 - **[[6 - Point Estimation]]**
 - **[[7 - Confidence Intervals]]**
 - **[[8 - Hypothesis Testing]]**
+- **[[9 - Chi Square Testing]]**
 
 %% End Waypoint %%

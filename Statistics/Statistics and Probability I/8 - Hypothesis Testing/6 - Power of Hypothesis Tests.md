@@ -1,0 +1,3 @@
+Recall the Type I and Type II errors (rejecting the null when you shouldn't have and failing to reject the null when you should have). We call $\beta$ the probability of a Type II error, and $1-\beta$ the **power** of a statistical test.
+
+$\alpha$ is the probability of a Type I error, and represents rejecting $H_0$ given $H_0$ is true. This is also the level of significance. $\beta$ represents failing to reject $H_0$ given $H_0$ is false. If we have a confidence interval $\overline x\pm z_{\alpha/2}\cdot\frac{\sigma}{\sqrt n}$, the population mean is $\mu$, and we're testing $H_0: \mu=\hat\mu$ and $H_1:\mu\neq\hat\mu$, we simply find the probability that $\mu$ is outside the interval.
