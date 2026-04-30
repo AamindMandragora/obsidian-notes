@@ -1,0 +1,1 @@
+Computer security is the protection of hardware and software, and the concepts are important for everyone to learn because all systems will eventually be attacked.

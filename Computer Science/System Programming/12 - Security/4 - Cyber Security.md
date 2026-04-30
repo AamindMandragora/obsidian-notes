@@ -1,0 +1,9 @@
+More and more systems are hacked over the web, so we need to understand how to protect our systems from these attacks.
+# Security at the TCP Level
+
+TCP is unencrypted, which means that all data sent over a TCP connection is in plain text. To send encrypted data, we must use a higher-level protocol like HTTP(S) or develop our own. TCP also can't verify the identity of who the program is connecting to and just trusts the DNS server to give a reasonable response. A security improvement is the Syn-Ack sequence number, which forces an attacker to either correctly guess a random number or be in the route between the computer and the destination in order to spoof packets. However, before the first packet is acknowledged, standardizing that random number, there is no connection, so a malicious attacker can send a flood of SYN packets to an unprepared server. However, this can be stopped by using IPTABLES or another netfilter module.
+
+Distributed Denial of Service is the hardest form of attack to stop, and it involves sending an excessive amount of network traffic to servers to clog them up and slow them down, which can lead to cascading failures in big systems.
+# Security at the DNS Level
+
+The US Department of Homeland Security released a directive to switch all services from DNS to DNSSec in 2019 to improve security. This is because regular DNS is easy to spoof as it sends requests as unsecured UDP packets which are easily tampered, pointing your browser to malicious servers. Instead of just attacking one person, hackers can connect to public WiFi and poison the router's cache, meaning that everyone connected will get the bad IP address.
