@@ -5,5 +5,6 @@
 - **[[5 - Eigenvalues and Eigenvectors]]**
 - **[[6 - Inner Product Spaces]]**
 - **[[7 - Operators on Inner Product Spaces]]**
+- **[[8 - Operators on Complex Vector Spaces]]**
 
 %% End Waypoint %%
