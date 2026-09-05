@@ -5,6 +5,7 @@
 - [[Design HashMap]]
 - [[Design HashSet]]
 - [[Encode and Decode Strings]]
+- [[First Missing Positive]]
 - [[Group Anagrams]]
 - [[Longest Common Prefix]]
 - [[Longest Consecutive Sequence]]
